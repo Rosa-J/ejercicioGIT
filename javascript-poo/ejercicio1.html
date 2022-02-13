@@ -1,6 +1,21 @@
 <script>
     let numeroDeElementos;
-    
+    numeroDeElementos = prompt("Ingresa numero de elementos: ");
+    a= 0
+    b= 1
+    let fibo =[a,b]
+
+    if(numeroDeElementos == 0) console.log("Has solicitado 0 elementos");
+    else if(numeroDeElementos == 1) console.log("El elemento es: "+ fibo[0]);
+    else {
+        for (let i=0; i<=(numeroDeElementos-3);i++){   
+            let c= a+b
+            fibo.push(c)
+            a=b
+            b=c
+        }
+        console.log(fibo)
+    }
 
 
 
