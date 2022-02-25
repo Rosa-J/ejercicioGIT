@@ -33,4 +33,13 @@ class Profesor extends Persona{
         la asignatura que dicta es ${this.asignatura} y su nivel en ella es ${this.nivel}`
     }
 }
-// class Grupo 
+class Grupo{
+    constructor(profesor, promedio, estudiantes){
+        this.profesor= profesor
+        this.promedio= promedio
+        this.estudiantes= estudiantes
+    }
+}
+
+let estudiantes =[["carlos",18],["mary",22],["silvia",19],["luis",22],["jose",19],["mary",21]]
+
